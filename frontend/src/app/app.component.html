@@ -1,0 +1,9 @@
+<p-menubar [model]="items" [style]="{'margin-bottom': '2%'}" *ngIf="isLoggedIn()">
+  <div>
+      <button type="button" pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em" (click)="logoutUser()"></button>
+  </div>
+</p-menubar>
+
+<router-outlet>
+  
+</router-outlet>
